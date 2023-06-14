@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;600;700&display=swap');
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+.heading{
+    font-size: 9rem;
+    text-transform: uppercase;
+    color:transparent;
+    -webkit-text-stroke: .05rem var(--main-color);
+    letter-spacing: .2rem;
+    text-align: center;
+    pointer-events: none;
+    position: relative;
+}
+
+.heading span{
+    position: absolute;
+    top:50%; left:50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    color:var(--main-color);
+    font-size: 3rem;
+}
+
+.menu2{
+    background-position: center;
+    background-size: cover;
+}

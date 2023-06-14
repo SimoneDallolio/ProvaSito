@@ -1,0 +1,88 @@
+.maps{
+    /*min-height: 100vh;*/
+    background: url(../image/bkg.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.maps .box-container{
+    margin-bottom: 30px;
+    
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+#map {
+    height: 400px;
+    width: 100%;
+    border: 5px solid white;
+    border-radius: 5px;
+  }
+
+.hours .card-container {
+    margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .hours .card {
+    flex: 0 1 350px;
+    margin: 10px;
+    border:var(--border);
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    gap:2.5rem;
+}
+
+.hours .card-header {
+    text-align: center;
+    font-size: 1.7rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: var(--main-color);
+    position: relative; /* Aggiungi posizione relativa al .card-header */
+}
+
+.hours .card-header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    height: 2px;
+    background-color: var(--main-color); /* Colore della riga ondulata */
+    border-radius: 50px;
+}
+
+
+.hours .card-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}
+  
+.hours .card-label {
+    padding-left: 5%;
+    color:var(--main-color);
+    font-size: 1.5rem;
+    line-height: 1.8;
+}
+.hours .card-value{
+    font-size: 1.5rem;
+    padding-right: 10%;
+    text-align: center;
+}
+  
+@media (max-width: 600px) {
+    .hours .card {
+        flex-basis: calc(100% - 20px);
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}

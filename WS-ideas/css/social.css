@@ -1,0 +1,54 @@
+.socials ul.social{
+    list-style: none;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.socials ul li{
+    margin: 10px 0;
+}
+.socials ul li a{
+    text-decoration: none;
+    color: #fff;
+    height: 60px;
+    line-height: 60px;
+    display: flex;
+}
+.socials ul li a span:nth-child(2){
+    background: #1877f2;
+    width: 60px;
+    height: 100%;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 24px;
+}
+.socials ul li a span:nth-child(1){
+    width: 0;
+    height: 100%;
+    background: #1877f2;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-left: 0;
+    letter-spacing: 2px;
+    overflow: hidden;
+    margin-right: 5px;
+    border-radius: 0 50px 50px 0;
+    transition: 0.3s ease;
+}
+.socials ul li a:hover span:nth-child(1){
+    width: 180px;
+    padding-left: 20px;
+}
+/* instagram */
+.socials ul li:nth-child(2) a span:nth-child(1),
+.socials ul li:nth-child(2) a span:nth-child(2){
+    background: #e4405f;
+}
+/* twitter */
+.socials ul li:nth-child(3) a span:nth-child(1),
+.socials ul li:nth-child(3) a span:nth-child(2){
+    background: #1da1f2;
+}
